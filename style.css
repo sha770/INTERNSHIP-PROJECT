@@ -9,140 +9,123 @@ body {
     background-attachment: fixed;
   background-size: cover;
   }
-  
-  header {
-    background-color: #13c5c5;
-    padding: 20px;
-    padding-top:90px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  h1 {
-    margin: 0;
-  }
 
-  .container{
-    padding:20px;
-  
-
-  }
-  .right {
-    align-items: center;
-    height: 100px;
-    width: 100px;
-    float: right;
-    margin: 20px;
-    padding: 20px;
-    padding-right: 230px;
-    position: relative;
-  }
-  #price {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-  }
-
-  .search-box {
-    position: absolute;
-    top: 30px;
-    left: 20;
-    width: 200px;
-    height:200px;
-    padding: 20px;
-    margin:20px;
-    display: none;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-style: double;
-    border-radius: 8px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: space-between;
-    opacity: 0.6;
-    transition: all 0.3s ease;
-  }
-  .search-box:hover{
-    transform: translateY(8px);
-}
-.input_text {
-  width: 90%;
-  height: 40px;
-  padding: 8px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 10px;
-}
-
-.search-button {
-  width: 100%;
-  padding: 8px 24px;
-  background-color: #2294ed;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  transition: background-color 0.3s ease;
-}
-
-.search-button:hover {
-  background-color: #0077cc;
-}
-
-/* Show the search box on hover */
-.right:hover .search-box {
-  display: block;
-}
-.right:hover #price{
-    opacity:0;
-}
-
-
-  
+/* Navbar Section */
 .navbar {
-    background-color: #b7e3d1;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 9px;
-    position:fixed;
-    width:100%;
-    z-index:1;
-  }
-  
-  .navbar h1 {
-    margin: 0;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-links li {
-    margin-right: 15px;
-  }
-  
-  .nav-links li:last-child {
-    margin-right: 0;
-  }
-  
-  .nav-links li a {
-    color: #0b0101;
-    text-decoration: none;
-    padding: 15px 10px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: 200;
-    font-size: 18px;
-  }
-  
-  .nav-links li a:hover {
-    background-color: #8c75e8;
-  }
+  background-color: transparent;
+  color: #fff;
+  height: 60px;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  margin-right: 110vh;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu li {
+  margin-top: right;
+  margin-right: 15px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+}
+/* navbar section end */
+
+/* Heading section */
+.heading-container {
+  height: 100vh;
+  padding-left: 0;
+  padding-right: 0;
+  background-image: url(Vegetable.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.main-heading {
+  font-size: 10vw;
+  font-weight: 900;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 23vh;
+}
+
+.sub-heading {
+  font-size: 1.5vw;
+  font-weight: 10;
+  letter-spacing: 1vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 23vh;
+}
+/* heading section end */
+
+
+/* Service Section */
+.service-container {
+  padding: 7% 15%;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.features-icon {
+  color: #678983;
+  margin-bottom: 1rem;
+}
+
+.features-icon:hover {
+  color: #2C3639;
+}
+
+.feature-p {
+  color: #8f8f8f;
+  font-weight: normal;
+  text-align: center;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+/* Service Section end */
   
   .featured-vegetables h2 {
     margin: 0;
