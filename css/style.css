@@ -372,6 +372,48 @@ body {
 
 /*___________________________________________________FOOTER__________________________________________________________*/
 .footer{
-  background: #092A10;
-  
+  background: #092A10; 
 }
+
+.footer-block{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10%;
+  flex: 1;
+  color: #F0F0F0;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: left;
+}
+
+.footer-block-Site_info , .footer-block-Creator , .footer-block-Extra_info
+{
+  p{
+  font-size: 0.875rem;
+  } 
+  display: inline-flex;
+  padding: 0.375rem 0.875rem 2.625rem 0rem;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 20%;
+
+}
+.footer-block-Extra_info
+{
+  div{
+    width: 3.75rem;
+    height: 1.1875rem;
+    display: inline-block;
+    width: 25% ;
+  }
+  width: 23.75rem;
+  height: 3.3125rem;
+  flex-shrink: 0;
+  flex-direction: row;
+}
+/*___________________________________________________FOOTER__________________________________________________________*/
+
