@@ -421,6 +421,17 @@ body {
   justify-content: space-between;
 }
 
+.footer-block-Extra_info span
+{
+  border-radius: 20px;
+}
+.footer-block-Extra_info span:hover {
+  background-color: rgb(144, 196, 173);
+  border-radius: 2px;
+  color: #2C3639;
+  
+}
+
 
 /*___________________________________________________FOOTER - END __________________________________________________________*/
 
