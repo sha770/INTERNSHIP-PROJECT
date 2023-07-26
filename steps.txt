@@ -1,36 +1,53 @@
 Steps to Initiliaze a Git Repo or Link a local repo.
-PreRequisites:GitHub Account,Git Bash must be installed.
+
+Pre-Requisites:  GitHub Account,Git Bash must be installed.
+
 NOTE: YOu will be asked to complete verification of your GIthub Account & grant permissin to connect
 if you are doing this process for the first time.
+IT's Simple just follow verification steps.I've ignored that process here.
 
-1->Create a folder on your pc where you want to store the project.
+STEPS:->
+1->Create a folder on your pc where you want to store the project.or open existing folder having project.
+
 2->Open that project in VS Code.
+
 3->In Vscode's Terminal Select GIt bash as CLI tool & Initiliaze the project using following command:
 git Initiliaze
+
 You will see this message:Initialized empty Git repository in path_here
+
 4->After that Do whatever you want in that folder (Create new html project,etc)
+
 5->If You've not created a repository on Github you can visit GITHUB.com & create a repository manually for this project.
+
 6->Visit the Home Page of  repository you want to connect on Github.com.You might be asked to verify.
-7->There's a green button named Code inside that COpy the HTTPS URL of that repo.
+
+7->There's a green button named Code inside that repo.Click that & Copy the HTTPS URL of that repo.
+
 8->Use this command in your VS code's Git bash terminal to connect to that repo
+
 git remote add origin "Paste HTTPS path of repo copied from Github here"
+
 9->after connecting you can check if you are connected or not by switching to main branch as:
 Command-            git checkout main
 you willl see the following message if connected successfully
 Branch 'main' set up to track remote branch 'main' from 'origin'.
 
 10->Generally we don't push out code to main branch directly.
+
 11->TO create out own branch type
 git branch branch_name
+
 12->Then move to this branch using
 git checkout branch_name
 SUccess Message: Switched to branch 'branch_name'
+
 13->Now you can successfully push you code to this branch using these Steps
 git add.
 git commit -m "MEssage"
 git push origin branch_name
 
-14->If you want to pull code from main branch type:
+14->If you want to pull code from any branch type:
 git pull origin branch_name
 
 
