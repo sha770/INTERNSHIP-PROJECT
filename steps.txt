@@ -1,0 +1,15 @@
+Steps to Initiliaze a Git Repo or Link a local repo.
+PreRequisites:GitHub Account,Git Bash must be installed.
+1->Create a folder on your pc where you want to store the project.
+2->Open that project in VS Code.
+3->In Vscode's Terminal Select GIt bash as CLI tool & Initiliaze the project using following command:
+git Initiliaze
+You will see this message:Initialized empty Git repository in path_here
+4->After that Do whatever you want in that folder (Create new html project,etc)
+5->If You've not created a repository on Github you can visit GITHUB.com & create a repository manually for this project.
+6->Visit the Home Page of  repository you want to connect on Github.com.
+7->There's a green button named Code inside that COpy the HTTPS URL of that repo.
+8->Use this command in your VS code's Git bash terminal to connect to that repo
+git remote add origin "Paste HTTPS path of repo copied from Github here"
+
+
