@@ -11,8 +11,8 @@ STEPS:->
 
 2->Open that project in VS Code.
 
-3->In Vscode's Terminal Select GIt bash as CLI tool & Initiliaze the project using following command:
-git Initiliaze
+3->In Vscode's Terminal Select Git bash as CLI tool & Initiliaze the project using following command:
+git init
 
 You will see this message:Initialized empty Git repository in path_here
 
