@@ -46,35 +46,40 @@
 <body>
     <!-- Navbar Section -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#home">Veggie Mart</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">HOME</a>
+          <a class="nav-link" href="#home">HOME</a>
         </li>
+       
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#reviews">REVIEWS</a>
+        </li> -->
+        
         <li class="nav-item">
-          <a class="nav-link" href="vendor_registration.html">BECOME A VENDOR</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">REVIEW</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">CONTACT US</a>
+          <a class="nav-link" href="#about-us">ABOUT   US</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="login.html">LOGIN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="user_registration.html">REGISTER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="vendor_registration.html">BECOME A VENDOR</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <!-- Heading section -->
-  <div class="heading-container">
-    <div class="main-heading">HEADING</div>
-    <div class="sub-heading">SUB HEADING</div>
+  <div class="heading-container" id="home">
+    <div class="main-heading">Veggie Mart</div>
+    <div class="sub-heading">Your One Stop Shop for Fresh Veggies </div>
   </div>
 
   <!-- About Us Section -->
@@ -100,26 +105,27 @@
   <!-- Service Section -->
   <!-- <h1>Services</h1> -->
   <div class="service-container">
-      <h1 class="display-3">Services We Provide!</h1>
+      <h1 class="display-4">Services We Provide!</h1>
+
     <div class="feature-text">
-      <i class="fas fa-solid fa-tag fa-4x features-icon"></i>
+      <i class="fas fa-solid fa-tag fa-5x features-icon"></i>
       <h3 class="feature-title">Check Price</h3>
-      <p class="feature-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p class="feature-p">Check the latest prices of all the freshest vegetables.</p>
     </div>
     <div class="feature-text">
-      <i class="fas fa-solid fa-clock fa-4x features-icon"></i>
-      <h3 class="feature-title">See Future</h3>
-      <p class="feature-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <i class="fas fa-solid fa-clock fa-5x features-icon"></i>
+      <h3 class="feature-title"> Future Price</h3>
+      <p class="feature-p">See the Future Prices of the Vegetables.</p>
     </div>
     <div class="feature-text">
-      <i class="fas fa-solid fa-chart-line fa-4x features-icon"></i>
+      <i class="fas fa-solid fa-chart-line fa-5x features-icon"></i>
       <h3 class="feature-title">Visualize Data</h3>
-      <p class="feature-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p class="feature-p">See the Data of Vegetable Prices in Chart Representation.</p>
     </div>
     <div class="feature-text">
-      <i class="fas fa-solid fa-map-pin fa-4x features-icon"></i>
-      <h3 class="feature-title">Locate Markets</h3>
-      <p class="feature-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <i class="fas fa-solid fa-map-pin fa-5x features-icon"></i>
+      <h3 class="feature-title">Locate</h3>
+      <p class="feature-p">Locate the nearest market to your location.</p>
     </div>
   </div>
 
@@ -127,7 +133,7 @@
 <section class="container">
     <!-- CHeck Price componenent Start -->
   <div class="right">
-    <h2 id="price" class="check">Wants to Check Price??</h2>
+    <h2 id="price" class="check">Want to Check Price?</h2>
     <div class="search-box" style="background-image: url('Images\back.png');">
 
       <input type="text" class="input_text" placeholder="Search by location">
@@ -173,29 +179,43 @@
 
  <!--_____________________________End check price & slider__________________________________________________ -->
 
-  <!-- Delivery/Pickup Options Section -->
-  <section class="delivery-options">
+
+  <!-- Delivery/Pickup Options Section Start -->
+
+  <!-- <section class="delivery-options"> -->
     <!-- Add delivery and pickup information here -->
-    <h3>Delivery Options:</h3>
-    <ul class="list">
-      <li>Home Delivery Available</li>
-      <li>Pickup from Store</li>
-    </ul>
-  </section>
+    <!-- <h3>Delivery Options:</h3> -->
+    <!-- <ul class="list"> -->
+      <!-- <li>Home Delivery Available</li> -->
+      <!-- <li>Pickup from Store</li> -->
+    <!-- </ul> -->
+  <!-- </section> -->
+
+<!-- Delivery/Pickup Options Section END-->
+
 
   <!-- User Reviews Section -->
   <section id="reviews">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <h2 class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem maxime reiciendis cum aliquid sed laborum!</h2>
+          <!-- <h2>
+            I can confidently say that FreshVegeMart has played a significant role in the growth and success of my vegetable
+            business.
+          Thank you, Veggie Mart, for creating such a wonderful space for vendors like me to thrive!
+          </h2> -->
+          <h2 class="text">I highly recommend this platform to any vendor looking to expand their market reach and connect with customers.
+            Thank you, Veggie Mart, </h2>
           <img class="review-img" src="https://images.pexels.com/photos/6787567/pexels-photo-6787567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="user-profile">
-          <em>Pebbles, New York</em>
+          <em>Gupta Gorceries,Dehradun</em>
         </div>
         <div class="carousel-item">
-          <h2 class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non quae voluptatem blanditiis dolorem quod.</h2>
+          <!-- <h2> The combination
+          of high-quality produce, user-friendly website, excellent customer service, and sustainable values makes FreshVegeMart
+          stand out from the rest.</h2> -->
+          <h2 class="text"> I am delighted to share my wonderful experience as a customer with FreshVegeMart! Thank you for making my vegetable shopping experience enjoyable and meaningful.</h2>
           <img class="review-img" src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600" alt="user-profile">
-          <em>Beverly, Illinois</em>
+          <em>Rahul Jain,Shimla</em>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -208,25 +228,6 @@
       </div>
 
   </section>
-
-  <!-- Vendor Registration Section -->
-  <section class="vendor-registration">
-    <h2>Become a Vendor</h2>
-    <!-- Add a call-to-action button for vendor registration -->
-    <button id="vendor-register-btn">Register Now</button>
-  </section>
-
-  <!-- News and Updates Section -->
-  <section class="news-updates">
-    <h2>News and Updates</h2>
-    <!-- Add the latest news and updates here -->
-    <p>Stay updated with the latest news and offers related to vegetable markets in your city.</p>
-  </section>
-
-
-
-
-
 
   <!-- _________________________________________Footer Section_________________________________________________________ -->
   
