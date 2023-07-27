@@ -12,47 +12,27 @@ body {
 
 /* Navbar Section */
 .navbar{
-  background-color: transparent;
   color: #fff;
-  height: 60px;
-  padding: 15px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.navbar-container {
-  display: flex;
-}
+} 
 
 .navbar-brand {
   font-size: 1.5rem;
-  text-decoration: none;
-  color: inherit;
-  margin-right: 110vh;
+  color:inherit;
+  padding-left: 3rem;
 }
 
-.navbar-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
+.navbar-nav li {
+  margin-right: 1.5rem;
 }
 
-.navbar-menu li {
-  margin-top: right;
-  margin-right: 15px;
+.navbar-nav li a {
+  color:inherit;
+  border-bottom: 0.15rem solid transparent;
 }
 
-.navbar-menu li a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 1rem;
+.navbar-nav li a:hover{
+  color: white;
+  border-bottom-color: #d3ecbf;
 }
 /* navbar section end */
 
@@ -126,6 +106,30 @@ body {
 
 }
 /* Service Section end */
+
+/* User Reviews Section */
+#reviews {
+  text-align: center;
+  background-color: #678983;
+  color: white;
+}
+
+.review-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.review-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* User Review Section End */
   
   .featured-vegetables h2 {
     margin: 0;
