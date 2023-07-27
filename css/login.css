@@ -1,0 +1,96 @@
+body {
+    background-image: url("../Images/background8.jpg");
+}
+
+main {
+    position: relative;
+    width: 750px;
+    height: 600px;
+    top: 8vh;
+}
+
+form {
+    width: 330px;
+    margin: auto !important;
+}
+
+img {
+    width: 100%;
+    height: 600px;
+}
+
+.fa-xmark {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+
+}
+
+.fa-xmark:hover {
+    cursor: pointer;
+    color: blueviolet;
+}
+
+.fa-circle-user,
+.fa-key {
+    border: 1px solid rgb(81, 80, 80);
+    padding: 0.5rem;
+}
+
+label[for="remember"]:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
+
+.alt-logIn {
+    padding: 0.6rem;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.fa-facebook-square {
+    background-color: rgb(39, 58, 100);
+}
+
+.btn-facebook {
+    background-color: rgba(59, 89, 152);
+    color: #fff;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.fa-twitter-square {
+    background-color: rgb(24, 127, 192);
+}
+
+.btn-twitter {
+    background-color: rgba(29, 161, 242);
+    color: #fff;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.fa-google {
+    background-color: rgb(153, 48, 39);
+}
+
+.btn-gmail {
+    background-color: rgba(219, 68, 55);
+    color: #fff;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+/*responsive*/
+@media (max-width: 1000px) {
+    main {
+        max-width: 400px;
+        height: 750px;
+    }
+
+    main div:nth-child(3) {
+        display: none;
+    }
+}
