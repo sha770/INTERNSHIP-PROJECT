@@ -50,6 +50,10 @@ git push origin branch_name
 14->If you want to pull code from any branch type:
 git pull origin branch_name
 
+15->If you want to merge your branch to main branch or any branch
+assuming you are currently on your branch( to check it-> git checkout branch_name)
+git merge main //in case of main branch
+git merge branch_name //in case of any branch
 
 
 
