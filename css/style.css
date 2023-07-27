@@ -11,7 +11,7 @@ body {
   }
 
 /* Navbar Section */
-.navbar {
+.navbar{
   background-color: transparent;
   color: #fff;
   height: 60px;
@@ -202,93 +202,13 @@ body {
     text-align: center;
   }
   
-  .social-media-icons {
-    /* Add styles for social media icons here */
-  }
+  
   .company-logo img {
     width: 50px;
     margin-left: 20px;
     margin-top: 10px;
 }
-.slideshow-container {
-  text-align: center;
-  align-items: center;
-  max-width: 700px;
-  position:relative;
-  margin: auto;
-  padding: 20px;
-  margin:20px;
-  background-color: rgb(193, 214, 157);
-  border-width: 50px;
-  border-radius: 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style: italic;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev{
-  left:0;
-  border-radius:3px 0 0 3px;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
+/*_________________________________Check price & slider__________________________________*/
 .container {
   padding: 20px;
 }
@@ -305,7 +225,8 @@ body {
 }
 
 #price {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: xx-large;
   font-style: italic;
   cursor: pointer;
   transition: opacity 0.3s ease;
@@ -368,10 +289,80 @@ body {
 .right:hover #price {
   opacity: 0;
 }
+.slideshow-container {
+  text-align: center;
+  align-items: center;
+  max-width: 700px;
+  position:relative;
+  margin: auto;
+  padding: 20px;
+  margin:20px;
+  background-color: rgb(193, 214, 157);
+  border-width: 50px;
+  border-radius: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  left:0;
+  border-radius:3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*___________________________________________________End check price & slider________________________________________*/
 
 
 /*___________________________________________________FOOTER__________________________________________________________*/
-.footer{
+/*.footer{
   background: #458353; 
   padding: 1% 1% 0% 4%;
   margin: 0%;
@@ -430,6 +421,168 @@ body {
   border-radius: 2px;
   color: #2C3639;
   
+}*/
+footer{
+  width:100%;
+  position:relative;
+  bottom:0;
+  height:190px;
+  margin: 0%;
+  background:linear-gradient(to bottom left,rgba(101, 34, 10),rgba(52, 232, 52, 0.8));
+  color:black;
+  padding:80px 0 ;
+  border-top-left-radius:130px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 17px;
+  line-height:20px;
+}
+.row{
+   width:100%;
+   margin:auto;
+   display:flex;
+   flex-wrap:nowrap;
+   align-items: flex;
+   justify-content: space-between;
+}
+.col{
+  padding:10px;
+  
+}
+.col:nth-child(2), .col:nth-child(3){
+  flex-basis:15%;
+}
+.footer-about{
+  width:180px;
+  margin-bottom:30px;
+  margin-left:50px;
+}
+.fotter-para{
+  width: 180px;
+  margin-left: 50px;
+}
+.col h3{
+  width:fit-content;
+  margin-bottom:20px;
+  position:relative;
+}
+.contact{
+  position: relative;
+  align-items: left;
+}
+
+.language-dropdown {
+  margin-top: 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+#language-select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #bbd8bc;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+
+
+
+.back-to-top-btn {
+  text-decoration: none;
+  position: absolute;
+  padding: 8px 7px;
+  background-color: #094408;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+.back-to-top-btn:hover {
+  background-color:#457e44;
+}
+form{
+  padding-bottom: 15px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #121111;
+  margin-bottom: 50px;
+  color:#000;
+}
+form .far{
+  font-size: 18px;
+  margin-right: 10px;
+}
+form input{
+  width:100%;
+  background:transparent;
+  color:#100505;
+  border:0;
+  outline:none;
+}
+form button{
+  background: transparent;
+  border:0;
+  outline: none;
+  cursor:pointer;
+}
+form button .fas{
+  font-size:16px;
+  color:#302b2b;
+}
+
+.social-icons .fa-brands{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 30px;
+  color:#000;
+  margin-right:15px;
+  cursor:pointer;
+}
+.hr{
+  width:90%;
+  border:0;
+  border-bottom:1px solid black;
+  margin: 20px 0;
+}
+.underline{
+  width:100%;
+  height:5px;
+  background: #132925;
+  border-radius:3px;
+  position:absolute;
+  top:25px;
+  left:0;
+  overflow: hidden;
+}
+.underline span{
+  width:15px;
+  height:100%;
+  background: #fff;
+  border-radius:3px;
+  position:absolute;
+  top:0;
+  left:10px;
+  animation:moving 2s linear infinite;
+}
+@keyframes moving{
+  0%{
+    left:-10%;
+  }
+  100%{
+    left:100%;
+  }
 }
 
 
