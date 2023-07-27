@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-image: url("../Images/background4.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url("../Images/background5.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 /* Navbar Section */
-.navbar{
+.navbar {
   background-color: transparent;
   color: #fff;
   height: 60px;
@@ -54,6 +55,7 @@ body {
   color: inherit;
   font-size: 1rem;
 }
+
 /* navbar section end */
 
 /* Heading section */
@@ -88,7 +90,32 @@ body {
   position: relative;
   top: 23vh;
 }
+
 /* heading section end */
+
+/* About Section Start */
+.about-heading {
+  font-size: 5vw;
+  font-weight: 500;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10vh;
+  /* bottom: 5vh; */
+}
+
+.about-subheading {
+  font-size: 2vw;
+  font-weight: 20;
+  color:grey;
+  position: relative;
+  top: 10vh;
+  bottom: 20vh;
+  margin:100px 100px;
+}
+/* About Section End */
 
 
 /* Service Section */
@@ -125,89 +152,93 @@ body {
   align-items: center;
 
 }
+
 /* Service Section end */
-  
-  .featured-vegetables h2 {
-    margin: 0;
-  }
-  
-  
-  .vendor-listings {
-    padding: 20px;
-  }
-  
-  .vendor-listings h2 {
-    margin: 0;
-  }
-  
-  .vendor {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .filter-options {
-    padding: 20px;
-  }
-  
-  .filter-options label {
-    margin-right: 10px;
-  }
-  
-  .delivery-options {
-    padding: 20px;
-  }
-  
-  .delivery-options h3 {
-    margin: 0;
-    text-align: right;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    
-  }
-  .list{
-    list-style: none;
-    text-align: right;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-size: medium;
-  
-  }
-  .user-reviews {
-    padding: 20px;
-  }
-  
-  .user-reviews h3 {
-    margin: 0;
-  }
-  
-  .vendor-registration {
-    padding: 20px;
-  }
-  
-  .news-updates {
-    padding: 20px;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  .news-updates h2 {
-    margin: 0;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  footer {
-    background-color: #f5f5f5;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  
-  .company-logo img {
-    width: 50px;
-    margin-left: 20px;
-    margin-top: 10px;
+
+.featured-vegetables h2 {
+  margin: 0;
 }
+
+
+.vendor-listings {
+  padding: 20px;
+}
+
+.vendor-listings h2 {
+  margin: 0;
+}
+
+.vendor {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.filter-options {
+  padding: 20px;
+}
+
+.filter-options label {
+  margin-right: 10px;
+}
+
+.delivery-options {
+  padding: 20px;
+}
+
+.delivery-options h3 {
+  margin: 0;
+  text-align: right;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.list {
+  list-style: none;
+  text-align: right;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: medium;
+
+}
+
+.user-reviews {
+  padding: 20px;
+}
+
+.user-reviews h3 {
+  margin: 0;
+}
+
+.vendor-registration {
+  padding: 20px;
+}
+
+.news-updates {
+  padding: 20px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.news-updates h2 {
+  margin: 0;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.company-logo img {
+  width: 50px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
 /*_________________________________Check price & slider__________________________________*/
 .container {
   padding: 20px;
@@ -225,7 +256,7 @@ body {
 }
 
 #price {
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: xx-large;
   font-style: italic;
   cursor: pointer;
@@ -289,14 +320,15 @@ body {
 .right:hover #price {
   opacity: 0;
 }
+
 .slideshow-container {
   text-align: center;
   align-items: center;
   max-width: 700px;
-  position:relative;
+  position: relative;
   margin: auto;
   padding: 20px;
-  margin:20px;
+  margin: 20px;
   background-color: rgb(193, 214, 157);
   border-width: 50px;
   border-radius: 10px;
@@ -310,7 +342,8 @@ body {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -330,13 +363,16 @@ body {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-.prev{
-  left:0;
-  border-radius:3px 0 0 3px;
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
 }
+
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -349,15 +385,22 @@ body {
   position: absolute;
   top: 0;
 }
+
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
+
 /*___________________________________________________End check price & slider________________________________________*/
 
 
@@ -422,50 +465,59 @@ body {
   color: #2C3639;
   
 }*/
-footer{
-  width:100%;
-  position:relative;
-  bottom:0;
-  height:190px;
-  margin: 0%;
-  background:linear-gradient(to bottom left,rgba(101, 34, 10),rgba(52, 232, 52, 0.8));
-  color:black;
-  padding:80px 0 ;
-  border-top-left-radius:130px;
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  height:100%;
+  /* height: 120px; */
+  margin: 0;
+  background: linear-gradient(to bottom left, rgba(101, 34, 10), rgba(52, 232, 52, 0.8));
+  color: black;
+  padding: 0px 0;
+  /* border-top-left-radius:130px; */
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 17px;
-  line-height:20px;
+  font-size: 12px;
+  line-height: 20px;
 }
-.row{
-   width:100%;
-   margin:auto;
-   display:flex;
-   flex-wrap:nowrap;
-   align-items: flex;
-   justify-content: space-between;
+
+.row {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex;
+  justify-content: space-between;
 }
-.col{
-  padding:10px;
-  
+
+.col {
+  padding: 10px;
+
 }
-.col:nth-child(2), .col:nth-child(3){
-  flex-basis:15%;
+
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
 }
-.footer-about{
-  width:180px;
-  margin-bottom:30px;
-  margin-left:50px;
+
+.footer-about {
+  width: 180px;
+  margin-bottom: 30px;
+  margin-left: 50px;
 }
-.fotter-para{
+
+.fotter-para {
   width: 180px;
   margin-left: 50px;
 }
-.col h3{
-  width:fit-content;
-  margin-bottom:20px;
-  position:relative;
+
+.col h3 {
+  width: fit-content;
+  margin-bottom: 20px;
+  position: relative;
 }
-.contact{
+
+.contact {
   position: relative;
   align-items: left;
 }
@@ -502,89 +554,98 @@ label {
   border-radius: 5px;
   cursor: pointer;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  
+
 }
 
 .back-to-top-btn:hover {
-  background-color:#457e44;
+  background-color: #457e44;
 }
-form{
+
+form {
   padding-bottom: 15px;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #121111;
   margin-bottom: 50px;
-  color:#000;
+  color: #000;
 }
-form .far{
+
+form .far {
   font-size: 18px;
   margin-right: 10px;
 }
-form input{
-  width:100%;
-  background:transparent;
-  color:#100505;
-  border:0;
-  outline:none;
-}
-form button{
+
+form input {
+  width: 100%;
   background: transparent;
-  border:0;
+  color: #100505;
+  border: 0;
   outline: none;
-  cursor:pointer;
-}
-form button .fas{
-  font-size:16px;
-  color:#302b2b;
 }
 
-.social-icons .fa-brands{
-  width:40px;
-  height:40px;
-  border-radius:50%;
+form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+form button .fas {
+  font-size: 16px;
+  color: #302b2b;
+}
+
+.social-icons .fa-brands {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   text-align: center;
   line-height: 30px;
   font-size: 30px;
-  color:#000;
-  margin-right:15px;
-  cursor:pointer;
+  color: #000;
+  margin-right: 15px;
+  cursor: pointer;
 }
-.hr{
-  width:90%;
-  border:0;
-  border-bottom:1px solid black;
+
+.hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid black;
   margin: 20px 0;
 }
-.underline{
-  width:100%;
-  height:5px;
+
+.underline {
+  width: 100%;
+  height: 5px;
   background: #132925;
-  border-radius:3px;
-  position:absolute;
-  top:25px;
-  left:0;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
   overflow: hidden;
 }
-.underline span{
-  width:15px;
-  height:100%;
+
+.underline span {
+  width: 15px;
+  height: 100%;
   background: #fff;
-  border-radius:3px;
-  position:absolute;
-  top:0;
-  left:10px;
-  animation:moving 2s linear infinite;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
 }
-@keyframes moving{
-  0%{
-    left:-10%;
+
+@keyframes moving {
+  0% {
+    left: -10%;
   }
-  100%{
-    left:100%;
+
+  100% {
+    left: 100%;
   }
 }
 
 
 /*___________________________________________________FOOTER - END __________________________________________________________*/
-
