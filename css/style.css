@@ -477,10 +477,10 @@ footer {
   margin: 0;
   background: linear-gradient(to bottom left, rgba(101, 34, 10), rgba(52, 232, 52, 0.8));
   color: black;
-  padding: 0px 0;
-  /* border-top-left-radius:130px; */
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 12px;
+  padding: 30px 0;
+  border-top-left-radius:130px;
+  font-family:'Coiny', cursive;
+  font-size: 17px;
   line-height: 20px;
 }
 
@@ -488,29 +488,32 @@ footer {
   width: 100%;
   margin: auto;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: flex;
   justify-content: space-between;
 }
 
 .col {
-  padding: 10px;
-
+  padding: 20px;
+ flex:1;
+ max-width: 300px;
 }
-
+.col:not(:last-child) {
+  margin-right: 20px;
+}
 .col:nth-child(2),
 .col:nth-child(3) {
-  flex-basis: 15%;
+  flex-basis: 25%;
 }
 
 .footer-about {
-  width: 180px;
+  width: 190px;
   margin-bottom: 30px;
   margin-left: 50px;
 }
 
 .fotter-para {
-  width: 180px;
+  width: 190px;
   margin-left: 50px;
 }
 
@@ -611,10 +614,10 @@ form button .fas {
   cursor: pointer;
 }
 
-.hr {
+footer .hr {
   width: 90%;
-  border: 0;
-  border-bottom: 1px solid black;
+  border: 2px;
+  border-bottom: 1px solid rgb(13, 0, 0);
   margin: 20px 0;
 }
 
@@ -624,9 +627,10 @@ form button .fas {
   background: #132925;
   border-radius: 3px;
   position: absolute;
-  top: 25px;
+  top: 35px;
   left: 0;
   overflow: hidden;
+  display: inline-block;
 }
 
 .underline span {
@@ -652,3 +656,151 @@ form button .fas {
 
 
 /*___________________________________________________FOOTER - END __________________________________________________________*/
+.head-design {
+  font-family:'Coiny', cursive;
+  font-size: xx-large;
+  font-style: italic;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.caption{
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-size:medium;
+font-style: normal;
+align-items: center;
+}
+
+.check-pri-cont {
+display: flex;
+flex-wrap: wrap; 
+}
+.check_price,
+.today-entry,
+.go-to-vendor,
+.style-mid{
+flex: 1; 
+padding: 40px; 
+box-sizing: border-box;
+}
+.style-mid{
+background-color: #f2f2f2;
+border: 1px solid #ccc;
+border-radius: 8px;
+margin: 10px 0; 
+/*visibility: hidden*/;
+flex-wrap: wrap;
+}
+.style-mid select,
+.style-mid input[type="text"],
+.style-mid button {
+margin-bottom: 10px;
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 3px;
+width: 100%;
+}
+
+.style-mid button {
+background-color: #4caf50;
+color: #fff;
+cursor: pointer;
+}
+.style-mid a{
+display:block;
+}
+.style-mid button:hover{
+background-color:#57ca3f;
+}
+.style-mid:hover {
+transform: translateY(8px);
+}
+/* Styles for the search box */
+.search-box,.ven-box {
+width: 250px;
+height: 280px;
+padding: 20px;
+margin: 20px;
+display:block;
+background-color: rgba(255, 255, 255, 0.8);
+border-style: double;
+border-radius: 8px;
+justify-content:space-around;
+opacity: 0.6;
+transition: all 0.3s ease;
+display:none;
+}
+.check_price:hover .search-box{
+display:block;
+}
+.check_price:hover .head-design{
+opacity: 0;
+}
+.check_price:hover .caption{
+opacity: 0;
+}
+.search-box .input_text,.ven-box .input_text {
+width: 100%;
+height: 60px;
+padding: 8px;
+border: 2px solid #ccc;
+border-radius: 4px;
+font-family: "Roboto", sans-serif;
+margin-bottom: 10px;
+}
+
+
+.search-box .search-button,.ven-box .search-button {
+width: 100%;
+padding: 8px 24px;
+background-color:#4caf50;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-family: "Roboto", sans-serif;
+transition: background-color 0.3s ease;
+}
+
+/* Optional: Style the placeholder text */
+.search-box .input_text::placeholder {
+color: #999;
+}
+
+.search-button:hover {
+background-color: #57ca3f;
+}
+.search-box:hover,.ven-box:hover {
+transform: translateY(8px);
+}
+.go-to-vendor:hover .ven-box{
+display:block;
+}
+.go-to-vendor:hover .hide-last{
+opacity:0;
+}
+
+.container{
+  padding: 20px;
+}
+.slider{
+ font-family: 'Coiny', cursive;
+}
+section .carousel-inner .item{
+  height: 100vh;
+}
+section .carousel-inner .item img{
+  width: 100%;
+}
+.carousel-caption{
+  padding-bottom: 150px;
+}
+.carousel-caption h2{
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.carousel-control.right{
+  background-image: none;
+}
+.carousel-control.left{
+  background-image: none;
+}
