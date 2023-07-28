@@ -22,6 +22,10 @@ body {
   padding-left: 3rem;
 }
 
+.navbar-brand:hover{
+  color: white;
+}
+
 .navbar-nav li {
   margin-right: 1.5rem;
 }
@@ -60,9 +64,9 @@ body {
 }
 
 .sub-heading {
-  font-size: 2vw;
-  font-weight: 50;
-  /* letter-spacing: 0.5vw; */
+  font-size: 1.5vw;
+  font-weight: 80;
+  letter-spacing: 1vw;
   color: white;
   display: flex;
   justify-content: center;
@@ -135,6 +139,38 @@ body {
 }
 
 /* Service Section end */
+
+/* Graphical Representation Section */
+
+.graph-section{
+  background-color: #678983;
+}
+
+.img-col{
+  background-color: white;;
+}
+
+.img-col img{
+  width: 100%;
+  height: 100%;
+}
+
+.text-col h1{
+  color: white;
+  text-align: right;
+  font-size: 5rem;
+  font-weight: 800;
+  position: relative;
+  right: 1rem;
+  line-height: 7rem;
+}
+
+.button-col{
+  position:relative;
+  left:28rem;
+  display:inline-block;
+}
+/* Graphical Representaion Section End */
 
 /* User Reviews Section */
 #reviews {
