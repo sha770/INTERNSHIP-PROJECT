@@ -11,26 +11,43 @@ body {
   background-size: cover;
 }
 
-/* Navbar Section */
+/* ___________________________________________NAVBAR SECTION_________________________________________________________ */
 .navbar {
-  background-color: transparent;
-  /* Add the following styles for the fixed position */
+  color: #fff;
   position: fixed;
-  top: 0;
-  width: 100%;
 }
 
-/* Custom CSS to change link colors */
-.navbar-light .navbar-nav .nav-link {
+.navbar-brand {
+  font-size: 2rem;
+  color: inherit;
+  padding-left: 3rem;
+  padding-right: 58rem;
+}
+
+.navbar-brand:hover {
   color: white;
+  text-align: center;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-  color: yellow;
+.navbar-nav li {
+  margin-right: 1.5rem;
 }
-/* navbar section end */
 
-/* Heading section */
+.navbar-nav li a {
+  color: inherit;
+  border-bottom: 0.2rem solid transparent;
+  text-decoration: none;
+  ;
+}
+
+.navbar-nav li a:hover {
+  color: white;
+  border-bottom-color: #d3ecbf;
+}
+
+/* ___________________________________________NAVBAR SECTION END_________________________________________________________ */
+
+/* ___________________________________________HEADING SECTION_________________________________________________________ */
 .heading-container {
   height: 100vh;
   padding-left: 0;
@@ -63,9 +80,9 @@ body {
   top: 23vh;
 }
 
-/* heading section end */
+/* ___________________________________________HEADING SECTION END_________________________________________________________ */
 
-/* About Section Start */
+/* ___________________________________________ABOUT SECTION_________________________________________________________ */
 .about-heading {
   font-size: 5vw;
   font-weight: 500;
@@ -81,23 +98,23 @@ body {
 .about-subheading {
   font-size: 2vw;
   font-weight: 20;
-  color:grey;
+  color: grey;
   position: relative;
   top: 10vh;
   bottom: 20vh;
-  margin:100px 100px;
+  margin: 100px 100px;
 }
-/* About Section End */
 
+/* ___________________________________________ABOUT SECTION END_________________________________________________________ */
 
-/* Service Section */
+/* ___________________________________________SERVICE SECTION_________________________________________________________ */
 .service-container {
   padding: 5% 15%;
   background-color: white;
   position: relative;
   display: flex;
   /* justify-content: space-evenly; */
-  justify-content:center;
+  justify-content: center;
 }
 
 .feature-title {
@@ -126,24 +143,24 @@ body {
 
 }
 
-/* Service Section end */
+/* ___________________________________________SERVICE SECTION END_________________________________________________________ */
 
-/* Graphical Representation Section */
+/* ___________________________________________GRAPH SECTION_________________________________________________________ */
 
-.graph-section{
+.graph-section {
   background-color: #678983;
 }
 
-.img-col{
+.img-col {
   background-color: white;
 }
 
-.img-col img{
+.img-col img {
   width: 100%;
   height: 100%;
 }
 
-.text-col h1{
+.text-col h1 {
   color: white;
   text-align: right;
   font-size: 7rem;
@@ -153,21 +170,22 @@ body {
   line-height: 9rem;
 }
 
-.button-col{
-  position:relative;
-  left:46rem;
-  display:inline-block;
+.button-col {
+  position: relative;
+  left: 46rem;
+  display: inline-block;
 }
-/* Graphical Representaion Section End */
 
-/* User Reviews Section */
+/* ___________________________________________GRAPH SECTION END_________________________________________________________ */
+
+/* ___________________________________________USER REVIEW SECTION_________________________________________________________ */
 #reviews {
   text-align: center;
   background-color: #678983;
   color: white;
 }
 
-.review-text{
+.review-text {
   font-size: 3rem;
   line-height: 1.5;
 }
@@ -182,216 +200,202 @@ body {
   padding: 7% 15%;
 }
 
-/* User Review Section End */
-  
-  .featured-vegetables h2 {
-    margin: 0;
-  }
-  
-  
-  .vendor-listings {
-    padding: 20px;
-  }
-  
-  .vendor-listings h2 {
-    margin: 0;
-  }
-  
-  .vendor {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .filter-options {
-    padding: 20px;
-  }
-  
-  .filter-options label {
-    margin-right: 10px;
-  }
-  
-  .delivery-options {
-    padding: 20px;
-  }
-  
-  .delivery-options h3 {
-    margin: 0;
-    text-align: right;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    
-  }
-  .list{
-    list-style: none;
-    text-align: right;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-size: medium;
-  
-  }
-  .user-reviews {
-    padding: 20px;
-  }
-  
-  .user-reviews h3 {
-    margin: 0;
-  }
-  
-  .vendor-registration {
-    padding: 20px;
-  }
-  
-  .news-updates {
-    padding: 20px;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  .news-updates h2 {
-    margin: 0;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  footer {
-    background-color: #f5f5f5;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  
-  .company-logo img {
-    width: 50px;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-.carousel-control.right{
-  background-image: none;
-}
-.carousel-control.left{
-  background-image: none;
-}
-/*___________________________________________________slider end________________________________________*/
+/* ___________________________________________USER REVIEW SECTION END_________________________________________________________ */
 
-/*______________________________________________check price section start___________________________________________*/
-.check-pri-cont {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  padding:50px;
+/* ___________________________________________SLIDER SECTION_________________________________________________________ */
+.container {
+  padding: 20px;
 }
 
-/* Style the left container with the heading and caption */
-.check {
-  flex: 1;
-  padding-right: 350px;
-  align-items: center;
+.slider {
+  font-family: 'Coiny', cursive;
 }
 
-/* Style the right container with the search box */
-.search-box {
-  flex: 1;
-  display: block;
-  text-align: center;
-  font-family:'Coiny', cursive;
-  
-  font-style: italic;
-  
-  position:relative;
-  height: 270px;
-padding: 20px;
-margin: 20px;
-background-image: url('../Images/background12.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-background-color: rgba(255, 255, 255, 0.8);
-border-style: double;
-border-radius: 8px;
-  transition: all 0.3s ease;
+section .carousel-inner .item {
+  height: 100vh;
 }
-.search-box:hover{
-  transform: translateY(8px);
-}
-/* Style the search box as a block-level element within a box */
-.input_text {
-  
 
-  display: block;
+section .carousel-inner .item img {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 10px auto; /* Add some spacing between the elements */
-  font-size: 16px;
-  background-image: url('../Images/background5.jpg');
 }
 
-.search-button {
-  display:inline-block;
-  background-color: #0ae63a;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  width:100%;
+.carousel-caption {
+  padding-bottom: 150px;
 }
-.search-button:hover{
-  background-color: #457e44;
-}
-/* Additional styling for the heading and caption */
-.head-design {
+
+.carousel-caption h2 {
   font-size: 50px;
-  font-weight:900;
-  margin: 0;
-  text-align: center;
-  font-family:'Coiny', cursive;
-  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+
+/* ___________________________________________SLIDER SECTION END_________________________________________________________ */
+
+/* ___________________________________________CHECK PRICE SECTION_________________________________________________________ */
+.head-design {
+  font-family: 'Coiny', cursive;
+  font-size: xx-large;
   font-style: italic;
-  position: relative;
-  padding: 10px;
-  margin :20px 10px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
 .caption {
-  font-size: 20px;
-  margin: 10px 0;
-  text-align:center;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
-}
-/*__________________________________________check price end________________________________________*/
-
-/*_________________________________Check price & slider__________________________________*/
-
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+  font-size: medium;
+  font-style: normal;
+  align-items: center;
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+.check-pri-cont {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
+.check_price,
+.today-entry,
+.go-to-vendor,
+.style-mid {
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
-/*___________________________________________________End check price & slider________________________________________*/
+.style-mid {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px 0;
+  /*visibility: hidden*/
+  ;
+  flex-wrap: wrap;
+}
 
+.style-mid select,
+.style-mid input[type="text"],
+.style-mid button {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.style-mid button {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.style-mid a {
+  display: block;
+}
+
+.style-mid button:hover {
+  background-color: #57ca3f;
+}
+
+.style-mid:hover {
+  transform: translateY(8px);
+}
+
+/* Styles for the search box */
+.ven-box {
+  width: 250px;
+  height: 280px;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-style: double;
+  border-radius: 8px;
+  justify-content: space-around;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+.search-box {
+  position: relative;
+  width: 250px;
+  height: 280px;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-style: double;
+  border-radius: 8px;
+  justify-content: space-around;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+.check_price:hover .search-box {
+  display: block;
+}
+
+.check_price:hover .head-design {
+  opacity: 0;
+}
+
+.check_price:hover .caption {
+  opacity: 0;
+}
+
+.search-box .input_text,
+.ven-box .input_text {
+  width: 100%;
+  height: 60px;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+
+.search-box .search-button,
+.ven-box .search-button {
+  width: 100%;
+  padding: 8px 24px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+
+.search-box .input_text::placeholder {
+  color: #999;
+}
+
+.search-button:hover {
+  background-color: #57ca3f;
+}
+
+.search-box:hover,
+.ven-box:hover {
+  transform: translateY(8px);
+}
+
+.go-to-vendor:hover .ven-box {
+  display: block;
+}
+
+.go-to-vendor:hover .hide-last {
+  opacity: 0;
+}
+
+/* ___________________________________________CHECK PRICE SECTION END_________________________________________________________ */
 
 /*___________________________________________________FOOTER__________________________________________________________*/
 
@@ -400,14 +404,14 @@ footer {
   width: 100%;
   position: relative;
   bottom: 0;
-  height:100%;
+  height: 100%;
   /* height: 120px; */
   margin: 0;
   background: linear-gradient(to bottom left, rgb(73, 159, 90), rgba(54, 63, 82, 0.8));
   color: black;
-  padding: 80px 0;
-  /*border-top-left-radius:130px;*/
-  font-family:'Coiny', cursive;
+  padding: 30px 0;
+  border-top-left-radius: 130px;
+  font-family: 'Coiny', cursive;
   font-size: 17px;
   line-height: 20px;
 }
@@ -423,12 +427,14 @@ footer {
 
 .col {
   padding: 20px;
- flex:1;
- max-width: 300px;
+  flex: 1;
+  max-width: 300px;
 }
+
 .col:not(:last-child) {
   margin-right: 20px;
 }
+
 .col:nth-child(2),
 .col:nth-child(3) {
   flex-basis: 25%;
@@ -579,125 +585,4 @@ footer .hr {
   }
 }
 
-/*___________________________________________________FOOTER - END __________________________________________________________*/
-.head-design {
-  font-family:'Coiny', cursive;
-  font-size: xx-large;
-  font-style: italic;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-}
-.caption{
-font-family:Georgia, 'Times New Roman', Times, serif;
-font-size:medium;
-font-style: normal;
-align-items: center;
-}
-
-.check-pri-cont {
-display: flex;
-flex-wrap: wrap; 
-}
-.check_price,
-.today-entry,
-.go-to-vendor,
-.style-mid{
-flex: 1; 
-padding: 40px; 
-box-sizing: border-box;
-}
-.style-mid{
-background-color: #f2f2f2;
-border: 1px solid #ccc;
-border-radius: 8px;
-margin: 10px 0; 
-/*visibility: hidden*/;
-flex-wrap: wrap;
-}
-.style-mid select,
-.style-mid input[type="text"],
-.style-mid button {
-margin-bottom: 10px;
-padding: 5px;
-border: 1px solid #ccc;
-border-radius: 3px;
-width: 100%;
-}
-
-.style-mid button {
-background-color: #4caf50;
-color: #fff;
-cursor: pointer;
-}
-.style-mid a{
-display:block;
-}
-.style-mid button:hover{
-background-color:#57ca3f;
-}
-.style-mid:hover {
-transform: translateY(8px);
-}
-/* Styles for the search box */
-.search-box,.ven-box {
-width: 250px;
-height: 280px;
-padding: 20px;
-margin: 20px;
-display:block;
-background-color: rgba(255, 255, 255, 0.8);
-border-style: double;
-border-radius: 8px;
-justify-content:space-around;
-opacity: 0.6;
-transition: all 0.3s ease;
-display:none;
-}
-.check_price:hover .search-box{
-display:block;
-}
-.check_price:hover .head-design{
-opacity: 0;
-}
-.check_price:hover .caption{
-opacity: 0;
-}
-.search-box .input_text,.ven-box .input_text {
-width: 100%;
-height: 60px;
-padding: 8px;
-border: 2px solid #ccc;
-border-radius: 4px;
-font-family: "Roboto", sans-serif;
-margin-bottom: 10px;
-}
-
-.search-box .search-button,.ven-box .search-button {
-width: 100%;
-padding: 8px 24px;
-background-color:#4caf50;
-color: white;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-font-family: "Roboto", sans-serif;
-transition: background-color 0.3s ease;
-}
-
-/* Optional: Style the placeholder text */
-.search-box .input_text::placeholder {
-color: #999;
-}
-
-.search-button:hover {
-background-color: #57ca3f;
-}
-.search-box:hover,.ven-box:hover {
-transform: translateY(8px);
-}
-.go-to-vendor:hover .ven-box{
-display:block;
-}
-.go-to-vendor:hover .hide-last{
-opacity:0;
-}
+/*___________________________________________________FOOTER END __________________________________________________________*/
