@@ -147,7 +147,7 @@ body {
 }
 
 .img-col{
-  background-color: white;;
+  background-color: white;
 }
 
 .img-col img{
@@ -158,16 +158,16 @@ body {
 .text-col h1{
   color: white;
   text-align: right;
-  font-size: 5rem;
+  font-size: 7rem;
   font-weight: 800;
   position: relative;
   right: 1rem;
-  line-height: 7rem;
+  line-height: 9rem;
 }
 
 .button-col{
   position:relative;
-  left:28rem;
+  left:46rem;
   display:inline-block;
 }
 /* Graphical Representaion Section End */
