@@ -12,34 +12,22 @@ body {
 }
 
 /* Navbar Section */
-.navbar{
-  color: #fff;
-} 
-
-.navbar-brand {
-  font-size: 1.5rem;
-  color:inherit;
-  padding-left: 3rem;
+.navbar {
+  background-color: transparent;
+  /* Add the following styles for the fixed position */
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.navbar-brand:hover{
+/* Custom CSS to change link colors */
+.navbar-light .navbar-nav .nav-link {
   color: white;
 }
 
-.navbar-nav li {
-  margin-right: 1.5rem;
+.navbar-light .navbar-nav .nav-link:hover {
+  color: yellow;
 }
-
-.navbar-nav li a {
-  color:inherit;
-  border-bottom: 0.15rem solid transparent;
-}
-
-.navbar-nav li a:hover{
-  color: white;
-  border-bottom-color: #d3ecbf;
-}
-
 /* navbar section end */
 
 /* Heading section */
