@@ -196,117 +196,177 @@ body {
 
 /* User Review Section End */
   
-  .featured-vegetables h2 {
-    margin: 0;
-  }
-  
-  
-  .vendor-listings {
-    padding: 20px;
-  }
-  
-  .vendor-listings h2 {
-    margin: 0;
-  }
-  
-  .vendor {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .filter-options {
-    padding: 20px;
-  }
-  
-  .filter-options label {
-    margin-right: 10px;
-  }
-  
-  .delivery-options {
-    padding: 20px;
-  }
-  
-  .delivery-options h3 {
-    margin: 0;
-    text-align: right;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    
-  }
-  .list{
-    list-style: none;
-    text-align: right;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-size: medium;
-  
-  }
-  .user-reviews {
-    padding: 20px;
-  }
-  
-  .user-reviews h3 {
-    margin: 0;
-  }
-  
-  .vendor-registration {
-    padding: 20px;
-  }
-  
-  .news-updates {
-    padding: 20px;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  .news-updates h2 {
-    margin: 0;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  footer {
-    background-color: #f5f5f5;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  
-  .company-logo img {
-    width: 50px;
-    margin-left: 20px;
-    margin-top: 10px;
+
+
+/*_________________________________slider__________________________________*/
+.container{
+  padding: 20px;
+}
+.slider{
+ font-family: 'Coiny', cursive;
+}
+section .carousel-inner .item{
+  height: 100vh;
+}
+section .carousel-inner .item img{
+  width: 100%;
+}
+.carousel-caption{
+  padding-bottom: 150px;
+}
+.carousel-caption h2{
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.carousel-control.right{
+  background-image: none;
+}
+.carousel-control.left{
+  background-image: none;
+}
+/*___________________________________________________slider end________________________________________*/
+
+/*______________________________________________check price section start___________________________________________*/
+.head-design {
+  font-family:'Coiny', cursive;
+  font-size: xx-large;
+  font-style: italic;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.caption{
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-size:medium;
+font-style: normal;
+align-items: center;
 }
 
-/*_________________________________Check price & slider__________________________________*/
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+.check-pri-cont {
+display: flex;
+flex-wrap: wrap; 
+}
+.check_price,
+.today-entry,
+.go-to-vendor,
+.style-mid{
+flex: 1; 
+padding: 40px; 
+box-sizing: border-box;
+}
+.style-mid{
+background-color: #f2f2f2;
+border: 1px solid #ccc;
+border-radius: 8px;
+margin: 10px 0; 
+/*visibility: hidden*/;
+flex-wrap: wrap;
+}
+.style-mid select,
+.style-mid input[type="text"],
+.style-mid button {
+margin-bottom: 10px;
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 3px;
+width: 100%;
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+.style-mid button {
+background-color: #4caf50;
+color: #fff;
+cursor: pointer;
+}
+.style-mid a{
+display:block;
+}
+.style-mid button:hover{
+background-color:#57ca3f;
+}
+.style-mid:hover {
+transform: translateY(8px);
+}
+/* Styles for the search box */
+.ven-box {
+width: 250px;
+height: 280px;
+padding: 20px;
+margin: 20px;
+background-color: rgba(255, 255, 255, 0.8);
+border-style: double;
+border-radius: 8px;
+justify-content:space-around;
+opacity: 0.6;
+transition: all 0.3s ease;
+display:none;
+}
+.search-box{
+  position:relative;
+width: 250px;
+height: 280px;
+padding: 20px;
+margin: 20px;
+background-color: rgba(255, 255, 255, 0.8);
+border-style: double;
+border-radius: 8px;
+justify-content:space-around;
+opacity: 0.6;
+transition: all 0.3s ease;
+display:none;
+}
+.check_price:hover .search-box{
+display:block;
+}
+.check_price:hover .head-design{
+opacity: 0;
+}
+.check_price:hover .caption{
+opacity: 0;
+}
+.search-box .input_text,.ven-box .input_text {
+width: 100%;
+height: 60px;
+padding: 8px;
+border: 2px solid #ccc;
+border-radius: 4px;
+font-family: "Roboto", sans-serif;
+margin-bottom: 10px;
 }
 
-@keyframes fade {
-  from {
-    opacity: .4
-  }
 
-  to {
-    opacity: 1
-  }
+.search-box .search-button,.ven-box .search-button {
+width: 100%;
+padding: 8px 24px;
+background-color:#4caf50;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-family: "Roboto", sans-serif;
+transition: background-color 0.3s ease;
 }
 
-/*___________________________________________________End check price & slider________________________________________*/
+
+.search-box .input_text::placeholder {
+color: #999;
+}
+
+.search-button:hover {
+background-color: #57ca3f;
+}
+.search-box:hover,.ven-box:hover {
+transform: translateY(8px);
+}
+.go-to-vendor:hover .ven-box{
+display:block;
+}
+.go-to-vendor:hover .hide-last{
+opacity:0;
+}
+/*__________________________________________check price end________________________________________*/
 
 
 /*___________________________________________________FOOTER__________________________________________________________*/
+
 footer {
   width: 100%;
   position: relative;

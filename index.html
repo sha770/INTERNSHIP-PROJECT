@@ -27,13 +27,14 @@
     <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
 
     <link rel="stylesheet" type="text/css" href="/css/UntitledPage.css" />
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="https://unpkg.com/sticky-js@1.3.0/dist/sticky.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
   <!-- FOOTER CSS AND FILES -->
 
@@ -129,8 +130,8 @@
     </div>
   </div>
 
-<!-- ______________________________Check price & slider_______________________________-->
-<div class="container">
+<!-- ______________________________slider_______________________________-->
+  <div class="container">
   <section class="slider">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -178,41 +179,78 @@
     </div>
   </section>
   </div>
+ <!--_____________________________End slider__________________________________________________ -->
 
- <!--_____________________________End check price & slider__________________________________________________ -->
 
 
- <!-- Graphical Representation Section -->
- <div class="graph-section">
-  <div class="graph-container container text-center">
-    <div class="row">
-      <div class="img-col col">
-        <img src="https://www.ceicdata.com/datapage/charts/o_india_retail-price-doac-tomato-assam-guwahati/?type=area&from=2022-03-01&to=2023-02-01&lang=en" alt="graph">
-      </div>
-      <div class="text-col col">
-        <h1>COMPARE<br>WITH <br>GRAPH</h1>
-      </div>
-    </div>
-    <div class="button-col">
-      <a class="btn btn-light" href="#" role="button">Compare Others</a>
-    </div>
-  </div>
+<!-- ____________________________________check price section______________________________________-->
+<section class="check-pri-cont">
+  <div class="check_price">
+   <div class="check">
+   <h2 class="head-design">Wants to Check Price??</h2>
+   <h4 class="caption">You can check the current market price of vegitables here.</h4>
+   </div>
+   <div class="search-box">
+ 
+     <input type="text" class="input_text" placeholder="Search by location">
+     <input type="text" class="input_text" placeholder="Search by veggie">
+     <button type="submit" class="search-button">Search</button>
+   </div>
  </div>
-
-
-  <!-- Delivery/Pickup Options Section Start -->
-
-  <!-- <section class="delivery-options"> -->
-    <!-- Add delivery and pickup information here -->
-    <!-- <h3>Delivery Options:</h3> -->
-    <!-- <ul class="list"> -->
-      <!-- <li>Home Delivery Available</li> -->
-      <!-- <li>Pickup from Store</li> -->
-    <!-- </ul> -->
-  <!-- </section> -->
-
-<!-- Delivery/Pickup Options Section END-->
-
+ <div class="today-entry">
+   <div class="hide-en">
+    <h2 class="head-design">Make Today's Entry</h2>
+    <h4 class="caption">Make Entry of Today's Market price of vegitables here.</h4>
+   </div>
+   <div class="style-mid">
+    <select name="item-name" id="veggie">
+     <option value="">veggie</option>
+     <option value="tomato">Tomato</option>
+     <option value="potato">Potato</option>
+     <option value="Bhindi">Bhindi</option>
+     <option value="null">Not in options</option>
+   </select>
+   <select name="vendor" id="vendor">
+     <option value="">-who?-</option>
+     <option value="vendor1">Vendor1</option>
+     <option value="vendor2">Vendor2</option>
+     <option value="null">Not in option</option>
+   </select>
+   <br>
+   <select name="location" id="location">
+     <option value="">state</option>
+     <option value="Up">Uttar Pradash</option>
+     <option value="uk">Uttrakhand</option>
+     <option value="jk">Jammu&Kasmir</option>
+     <option value="null">Not in option</option>
+   </select>
+   <select name="location2" id="location2">
+     <option value="">city</option>
+     <option value="kanpur">kanpur</option>
+     <option value="lucknow">Lucknow</option>
+     <option value="dehradun">Dehradun</option>
+     <option value="null">Not in option</option>
+   </select>
+   Price:<input type="text">
+   <br>
+   <button type="submit">Make Entry</button>
+   <a href="#new">Add unlisted items</a>  
+   <a href="vendor_registration.html">New Vendor</a>
+ </div>
+ </div>
+ <div class="go-to-vendor">
+   <div class="hide-last">
+   <h2 class="head-design">Wants to sell vegitables??</h2>
+   <h4 class="caption">If you are a farmer and wants to sell your vegitables to vendors then search vendors here.</h4>
+   </div>
+   <div class="ven-box">
+   <input type="text" class="input_text" placeholder="Search by location">
+  
+   <button type="submit" class="search-button">Search</button>
+   </div>
+ </div>
+ </section>
+ <!--________________________________________check price section-End_______________________________________-->  
 
   <!-- User Reviews Section -->
   <section id="reviews">
@@ -251,35 +289,7 @@
 
   <!-- _________________________________________Footer Section_________________________________________________________ -->
   
-<!--  <footer class="footer">
-    <div class="footer-block">
-      <div class="footer-block-Site_info"> 
-        <h3>VEGGIE MART<h3>
-        <p> A website to get latest vegetable prices , predict future prices and many more.</p>
-      </div>
 
-
-      <div class="footer-block-Creator"> 
-        <h3>CREATORS</h3>
-        <p>
-          Abhishek Namdev<br>
-          Anshika Rathi<br>
-          Kamlesh Singh Bisht<br>
-          Mukul Rawat<br>
-          Shambhavi            
-        </p>
-      </div>
-
-
-      <div class="footer-block-Extra_info"> 
-      <div> <span>HOME</span></div>
-      <div><span>REVIEW</span></div>
-      <div><span>ABOUT</span></div>
-      <div><span>CONTACT US</span></div>
-      </div>
-    </div>
-  
-  </footer>-->
   <footer>
     <div class="row">
       <div class="col">
