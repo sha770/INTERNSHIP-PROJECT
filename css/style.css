@@ -149,6 +149,7 @@ body {
 
 .graph-section {
   background-color: #678983;
+  padding: 60px;
 }
 
 .img-col {
@@ -236,163 +237,100 @@ section .carousel-inner .item img {
   background-image: none;
 }
 
-/* ___________________________________________SLIDER SECTION END_________________________________________________________ */
+/*___________________________________________SLIDER SECTION END _________________________________________________________*/
 
-/* ___________________________________________CHECK PRICE SECTION_________________________________________________________ */
-.head-design {
-  font-family: 'Coiny', cursive;
-  font-size: xx-large;
-  font-style: italic;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-}
-
-.caption {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: medium;
-  font-style: normal;
-  align-items: center;
-}
-
+/*___________________________________________CHECK PRICE SECTION _________________________________________________________*/
 .check-pri-cont {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
 }
 
-.check_price,
-.today-entry,
-.go-to-vendor,
-.style-mid {
+/* Style the left container with the heading and caption */
+.check {
   flex: 1;
-  padding: 40px;
-  box-sizing: border-box;
+  padding-right: 350px;
+  align-items: center;
 }
 
-.style-mid {
-  background-color: #f2f2f2;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin: 10px 0;
-  /*visibility: hidden*/
-  ;
-  flex-wrap: wrap;
-}
-
-.style-mid select,
-.style-mid input[type="text"],
-.style-mid button {
-  margin-bottom: 10px;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  width: 100%;
-}
-
-.style-mid button {
-  background-color: #4caf50;
-  color: #fff;
-  cursor: pointer;
-}
-
-.style-mid a {
+/* Style the right container with the search box */
+.search-box {
+  flex: 1;
   display: block;
+  text-align: center;
+  font-family: 'Coiny', cursive;
+
+  font-style: italic;
+
+  position: relative;
+  height: 20vw;
+  padding: 20px;
+  margin: 20px;
+  background-image: url('../Images/background12.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-style: double;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
-.style-mid button:hover {
-  background-color: #57ca3f;
-}
-
-.style-mid:hover {
+.search-box:hover {
   transform: translateY(8px);
 }
 
-/* Styles for the search box */
-.ven-box {
-  width: 250px;
-  height: 280px;
-  padding: 20px;
-  margin: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-style: double;
-  border-radius: 8px;
-  justify-content: space-around;
-  opacity: 0.6;
-  transition: all 0.3s ease;
-  display: none;
-}
+/* Style the search box as a block-level element within a box */
+.input_text {
 
-.search-box {
-  position: relative;
-  width: 250px;
-  height: 280px;
-  padding: 20px;
-  margin: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-style: double;
-  border-radius: 8px;
-  justify-content: space-around;
-  opacity: 0.6;
-  transition: all 0.3s ease;
-  display: none;
-}
 
-.check_price:hover .search-box {
   display: block;
-}
-
-.check_price:hover .head-design {
-  opacity: 0;
-}
-
-.check_price:hover .caption {
-  opacity: 0;
-}
-
-.search-box .input_text,
-.ven-box .input_text {
   width: 100%;
-  height: 60px;
-  padding: 8px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px auto;
+  /* Add some spacing between the elements */
+  font-size: 16px;
+  background-image: url('../Images/background5.jpg');
 }
 
-
-.search-box .search-button,
-.ven-box .search-button {
-  width: 100%;
-  padding: 8px 24px;
-  background-color: #4caf50;
-  color: white;
+.search-button {
+  display: inline-block;
+  background-color: #0ae63a;
+  color: #fff;
   border: none;
+  padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  transition: background-color 0.3s ease;
-}
-
-
-.search-box .input_text::placeholder {
-  color: #999;
+  width: 100%;
 }
 
 .search-button:hover {
-  background-color: #57ca3f;
+  background-color: #457e44;
 }
 
-.search-box:hover,
-.ven-box:hover {
-  transform: translateY(8px);
+/* Additional styling for the heading and caption */
+.head-design {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 0;
+  text-align: center;
+  font-family: 'Coiny', cursive;
+  cursor: pointer;
+  font-style: italic;
+  position: relative;
+  padding: 10px;
+  margin: 20px 10px;
 }
 
-.go-to-vendor:hover .ven-box {
-  display: block;
-}
-
-.go-to-vendor:hover .hide-last {
-  opacity: 0;
+.caption {
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
 /* ___________________________________________CHECK PRICE SECTION END_________________________________________________________ */
