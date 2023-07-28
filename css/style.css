@@ -149,6 +149,7 @@ body {
 
 .graph-section {
   background-color: #678983;
+  padding: 60px;
 }
 
 .img-col {
@@ -243,7 +244,7 @@ section .carousel-inner .item img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 50px;
 }
 
@@ -264,7 +265,7 @@ section .carousel-inner .item img {
   font-style: italic;
 
   position: relative;
-  height: 270px;
+  height: 20vw;
   padding: 20px;
   margin: 20px;
   background-image: url('../Images/background12.jpg');
@@ -286,7 +287,7 @@ section .carousel-inner .item img {
 
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 10px auto;
