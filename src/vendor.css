@@ -1,6 +1,11 @@
-body {
-    background-image: url("../Images/background8.jpg");
-}
+/* body { */
+    /* background-image: url("../public/Images/background8.jpg"); */
+    /* background-image: url("./Images/background10.jpg"); */
+    
+    /* commented this one because it was creating conflict with login.css  */
+    /* used inline css to change background image in vendor.js instead */
+/* } */
+
 
 main {
     position: relative;
@@ -91,6 +96,7 @@ label[for="remember"]:hover {
     }
 
     main div:nth-child(3) {
-        display: none;
-    }
+        display: none; 
+     }
+
 }

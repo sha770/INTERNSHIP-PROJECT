@@ -5,7 +5,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-image: url("../Images/background5.jpg");
+  background-image: url("../public/Images/background5.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -17,11 +17,12 @@ body {
   position: fixed;
 }
 
+/* This part is creating conflict with bootstrap in React Js Port */
 .navbar-brand {
   font-size: 2rem;
   color: inherit;
   padding-left: 3rem;
-  padding-right: 58rem;
+  padding-right: 5rem;
 }
 
 .navbar-brand:hover {
@@ -52,7 +53,7 @@ body {
   height: 100vh;
   padding-left: 0;
   padding-right: 0;
-  background-image: url("../Images/Vegetable.png");
+  background-image: url("../public/Images/Vegetable.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -164,16 +165,17 @@ body {
 .text-col h1 {
   color: white;
   text-align: right;
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 800;
   position: relative;
   right: 1rem;
-  line-height: 9rem;
+  line-height: 6rem;
 }
 
 .button-col {
   position: relative;
-  left: 46rem;
+  /* left: 46rem; */
+  left:26rem;
   display: inline-block;
 }
 
@@ -192,7 +194,11 @@ body {
 }
 
 .review-img {
-  width: 10%;
+  /* These  was originally set in Pre React Version. Was causing irregular size for image.*/
+  /* width: 10%; */
+  width: 100px;
+  height: 130px;
+
   border-radius: 100%;
   margin: 20px;
 }
@@ -268,7 +274,7 @@ section .carousel-inner .item img {
   height: 20vw;
   padding: 20px;
   margin: 20px;
-  background-image: url('../Images/background12.jpg');
+  background-image: url("../public/Images/background12.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.8);
@@ -293,7 +299,7 @@ section .carousel-inner .item img {
   margin: 10px auto;
   /* Add some spacing between the elements */
   font-size: 16px;
-  background-image: url('../Images/background5.jpg');
+  background-image: url("../public/Images/background5.jpg");
 }
 
 .search-button {
@@ -337,17 +343,14 @@ section .carousel-inner .item img {
 
 /*___________________________________________________FOOTER__________________________________________________________*/
 
+
 footer {
   width: 100%;
   position: relative;
-  bottom: 0;
   height: 100%;
-  /* height: 120px; */
-  margin: 0;
-  background: linear-gradient(to bottom left, rgb(170, 216, 180), rgba(226, 234, 226, 0.8));
+  margin-bottom: -100%;
+  background: linear-gradient(to bottom left, rgb(213, 199, 199), rgba(207, 215, 230, 0.8));
   color: black;
-  padding: 30px 0;
-  border-top-left-radius: 130px;
   font-family: 'Coiny', cursive;
   font-size: 17px;
   line-height: 20px;
@@ -485,8 +488,8 @@ form button .fas {
 footer .hr {
   width: 90%;
   border: 2px;
-  border-bottom: 1px solid rgb(13, 0, 0);
-  margin: 20px 0;
+  border-bottom: 1px solid rgb(21, 20, 20);
+  margin:0;
 }
 
 .underline {
